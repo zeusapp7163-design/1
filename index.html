@@ -2,294 +2,352 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Bonanza (Свит Бонанза) 🍭 Играть Демо и на Рубли</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sweet Bonanza (Свит Бонанза) 🍭 Играть Демо и на Рубли [2026]</title>
     
-    <!-- SEO Мета-теги -->
-    <meta name="description" content="Играть в легендарный слот Sweet Bonanza от Pragmatic Play. Бесплатная демо версия (demo) в рублях, версии 1000 и 2500, крупные заносы, стратегии и отзывы.">
-    <meta name="keywords" content="sweet bonanza, sweet bonanza demo, sweet bonanza 1000, sweet bonanza 2500, sweet bonanza рубли, sweet bonanza демо, sweet rush bonanza, занос sweet bonanza, sweet bonanza super scatter, игра sweet bonanza, слоты sweet bonanza">
-    <meta name="robots" content="index, follow">
+    <meta name="description" content="Подробный обзор игры Sweet Bonanza от Pragmatic Play. Играй в демо версию (demo) на рубли бесплатно или на деньги. Узнай секреты, смотри заносы в версиях 1000 и 2500, изучай стратегии.">
+    <meta name="keywords" content="sweet bonanza, sweet bonanza demo, sweet bonanza 1000, sweet bonanza 2500, sweet bonanza рубли, sweet bonanza демо, sweet rush bonanza, занос sweet bonanza, игра sweet bonanza, слоты sweet bonanza">
     
-    <!-- Open Graph для красивых ссылок в соцсетях -->
-    <meta property="og:title" content="Sweet Bonanza 🍭 Играть Демо и на Рубли">
-    <meta property="og:description" content="Топовый слот Sweet Bonanza! Играй в демо версию или на реальные рубли. Узнай про секреты, версии 1000 и 2500.">
+    <meta property="og:title" content="Sweet Bonanza 🍭 Обзор слота, Стратегии и Демо">
+    <meta property="og:description" content="Все секреты игры Sweet Bonanza! Как играть, покупать бонусы и делать крупные заносы.">
     <meta property="og:type" content="website">
     
-    <!-- Favicon (иконка-леденец без внешних картинок) -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍭</text></svg>">
     
-    <!-- Подключение игровых шрифтов -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- Микроразметка -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Sweet Bonanza",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Web Browser, iOS, Android",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "RUB" },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.95", "ratingCount": "18400" }
+    }
+    </script>
 
     <style>
         :root {
-            --primary: #ff1493; /* Ярко-розовый */
-            --secondary: #00bfff; /* Голубой (небо) */
-            --accent: #ffb6c1; /* Светло-розовый */
-            --yellow: #ffd700;
-            --text-dark: #4a235a;
+            --bg-color: #0f0c29;
+            --bg-gradient: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            --primary: #ff1f71;
+            --primary-glow: rgba(255, 31, 113, 0.6);
+            --secondary: #00e5ff;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
         }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Nunito', sans-serif;
-            background: linear-gradient(180deg, #aee2ff 0%, #ffc0cb 100%);
-            color: var(--text-dark);
+            font-family: 'Manrope', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            line-height: 1.7;
             min-height: 100vh;
             overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
         }
 
-        h1, h2, h3 {
-            font-family: 'Fredoka One', cursive;
-            text-transform: uppercase;
-            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
-            letter-spacing: 1px;
+        /* Декорации фона */
+        .bg-glow {
+            position: fixed; top: -10%; left: -20%; width: 70vw; height: 70vw;
+            background: radial-gradient(circle, var(--primary-glow) 0%, transparent 60%);
+            filter: blur(120px); z-index: -1; opacity: 0.5;
+        }
+        .bg-glow-2 {
+            position: fixed; bottom: -10%; right: -20%; width: 70vw; height: 70vw;
+            background: radial-gradient(circle, rgba(0, 229, 255, 0.2) 0%, transparent 60%);
+            filter: blur(120px); z-index: -1; opacity: 0.6;
         }
 
-        /* Анимации */
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
-        @keyframes pulse-btn {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 20, 147, 0.7); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(255, 20, 147, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 20, 147, 0); }
-        }
+        /* Типографика */
+        h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; font-weight: 900; line-height: 1.3; margin-bottom: 15px; color: #fff; }
+        h1 { font-size: clamp(30px, 6vw, 56px); background: linear-gradient(to right, #fff, var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 25px; }
+        h2 { font-size: clamp(24px, 5vw, 36px); border-left: 4px solid var(--primary); padding-left: 15px; margin-top: 40px; }
+        h3 { font-size: clamp(20px, 4vw, 26px); color: var(--secondary); margin-top: 30px; }
+        p { font-size: clamp(15px, 2.5vw, 17px); margin-bottom: 18px; color: #cbd5e1; word-wrap: break-word; }
+        strong { color: #fff; }
+        ul, ol { margin-bottom: 20px; padding-left: 20px; font-size: clamp(15px, 2.5vw, 17px); color: #cbd5e1; }
+        li { margin-bottom: 10px; }
 
         /* Шапка */
         header {
-            text-align: center;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            padding: 15px 20px; text-align: center; border-bottom: 1px solid var(--glass-border);
+            background: rgba(15, 12, 41, 0.85); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100;
         }
+        .logo { font-family: 'Outfit', sans-serif; font-size: clamp(22px, 4vw, 28px); color: #fff; text-decoration: none; font-weight: 900; }
+        .logo span { color: var(--primary); }
+
+        /* Контейнер и панели */
+        main { max-width: 1100px; margin: 0 auto; padding: 30px 15px; }
         
-        .logo {
-            font-family: 'Fredoka One', cursive;
-            font-size: 32px;
-            color: var(--primary);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            text-shadow: 2px 2px 0 #fff;
-        }
-
-        /* Главный экран (Hero) */
-        .hero {
-            max-width: 1000px;
-            margin: 40px auto;
-            text-align: center;
-            padding: 40px 20px;
-            background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" fill-opacity="0.4" d="M44.7,-76.4C58.9,-69.2,71.8,-59.1,80.1,-46.1C88.4,-33.1,92.1,-16.5,89.5,-1.5C86.9,13.5,78,27.1,68.2,39.6C58.4,52.1,47.7,63.6,34.5,71.5C21.3,79.4,5.6,83.7,-9.1,81.1C-23.8,78.5,-37.6,69,-50.2,58.3C-62.8,47.6,-74.2,35.7,-81.1,21.3C-88,6.9,-90.4,-10.1,-85.4,-24.5C-80.4,-38.9,-68.1,-50.8,-54.6,-58.5C-41.1,-66.2,-26.5,-69.7,-11.9,-75.4C2.7,-81.1,17.5,-89.1,30.5,-83.6Z" transform="translate(100 100)"/></svg>') no-repeat center center;
-            background-size: contain;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .hero h1 {
-            font-size: 56px;
-            color: var(--primary);
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero p {
-            font-size: 22px;
-            font-weight: 700;
-            margin-bottom: 40px;
+        .glass-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: clamp(20px, 4vw, 40px);
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         /* Кнопки */
-        .buttons-group {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
+        .cta-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
         .btn {
-            padding: 18px 40px;
-            font-family: 'Fredoka One', cursive;
-            font-size: 24px;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: all 0.3s;
-            border: 4px solid #fff;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            display: inline-flex; align-items: center; justify-content: center; width: 100%; max-width: 320px;
+            padding: 16px 30px; border-radius: 12px; font-family: 'Outfit', sans-serif; font-size: clamp(16px, 3vw, 18px); font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s;
+        }
+        .btn-main { background: var(--primary); color: #fff; box-shadow: 0 0 20px var(--primary-glow); border: 1px solid #ff4d8d; }
+        .btn-main:hover { transform: translateY(-3px); box-shadow: 0 0 30px var(--primary-glow); background: #e01761; }
+        .btn-demo { background: transparent; color: var(--secondary); border: 2px solid var(--secondary); }
+        .btn-demo:hover { background: rgba(0, 229, 255, 0.1); transform: translateY(-3px); }
+
+        /* Плавающая кнопка (Закрепленная в углу) */
+        .floating-btn {
+            position: fixed; bottom: 20px; right: 20px; z-index: 999;
+            background: var(--primary); color: #fff; font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 16px; text-transform: uppercase; text-decoration: none;
+            padding: 15px 25px; border-radius: 50px; box-shadow: 0 5px 20px var(--primary-glow); border: 2px solid #ff4d8d;
+            display: flex; align-items: center; gap: 8px;
+            animation: pulse-shadow 2s infinite; transition: transform 0.3s;
+        }
+        .floating-btn:hover { transform: scale(1.05); }
+
+        @keyframes pulse-shadow {
+            0% { box-shadow: 0 0 0 0 rgba(255, 31, 113, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 31, 113, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 31, 113, 0); }
         }
 
-        .btn-play {
-            background: var(--primary);
-            color: #fff;
-            animation: pulse-btn 2s infinite;
-        }
-        
-        .btn-play:hover {
-            background: #d10074;
-            transform: translateY(-5px);
-        }
+        /* Таблицы (Адаптивные) */
+        .table-wrap { overflow-x: auto; margin-bottom: 25px; border-radius: 12px; border: 1px solid var(--glass-border); }
+        table { width: 100%; min-width: 500px; border-collapse: collapse; text-align: left; background: rgba(0,0,0,0.3); }
+        th, td { padding: 14px; border-bottom: 1px solid var(--glass-border); font-size: clamp(14px, 2.5vw, 16px); }
+        th { background: rgba(255, 255, 255, 0.05); color: var(--secondary); font-family: 'Outfit', sans-serif; }
+        tr:hover { background: rgba(255, 255, 255, 0.05); }
 
-        .btn-demo {
-            background: var(--yellow);
-            color: #d15600;
-        }
+        /* Карточки/Блоки */
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 30px 0; }
+        .card { background: rgba(0,0,0,0.3); border: 1px solid var(--glass-border); padding: 20px; border-radius: 16px; }
+        .card h4 { color: var(--secondary); font-size: 20px; margin-bottom: 10px; }
 
-        .btn-demo:hover {
-            background: #ffc107;
-            transform: translateY(-5px);
-        }
+        /* FAQ */
+        details { background: rgba(0,0,0,0.3); border: 1px solid var(--glass-border); border-radius: 12px; margin-bottom: 12px; }
+        summary { padding: 16px; font-weight: 700; color: #fff; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-family: 'Outfit', sans-serif; font-size: clamp(15px, 3vw, 18px); }
+        summary::-webkit-details-marker { display: none; }
+        summary::after { content: '+'; color: var(--primary); font-size: 24px; font-weight: 300; }
+        details[open] summary::after { content: '−'; }
+        .faq-content { padding: 0 16px 16px; border-top: 1px solid var(--glass-border); margin-top: 10px; padding-top: 16px; color: #cbd5e1; }
 
-        /* Секции с контентом (СЕО) */
-        .content-section {
-            max-width: 900px;
-            margin: 40px auto;
-            background: rgba(255, 255, 255, 0.85);
-            padding: 40px;
-            border-radius: 30px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            border: 3px solid #fff;
-        }
+        footer { text-align: center; padding: 30px 15px; border-top: 1px solid var(--glass-border); margin-top: 40px; font-size: 13px; color: var(--text-muted); padding-bottom: 80px; /* Отступ для плавающей кнопки */ }
 
-        .content-section h2 {
-            font-size: 32px;
-            color: var(--primary);
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .content-section h3 {
-            font-size: 24px;
-            color: var(--secondary);
-            margin-top: 30px;
-        }
-
-        .content-section p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .feature-card {
-            background: linear-gradient(135deg, #fff, var(--accent));
-            padding: 20px;
-            border-radius: 20px;
-            text-align: center;
-            border: 2px dashed var(--primary);
-            transition: transform 0.3s;
-        }
-
-        .feature-card:hover {
-            transform: scale(1.05);
-        }
-
-        .seo-tags {
-            font-size: 12px;
-            color: rgba(0,0,0,0.3);
-            text-align: justify;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: rgba(255, 20, 147, 0.1);
-            margin-top: 50px;
-        }
+        /* Скрытый сео-блок для плотности */
+        .seo-hidden { opacity: 0.3; font-size: 10px; line-height: 1.2; text-align: justify; margin-top: 20px; }
 
         @media (max-width: 768px) {
-            .hero h1 { font-size: 38px; }
-            .btn { font-size: 20px; width: 100%; text-align: center; box-sizing: border-box; }
-            .content-section { margin: 20px; padding: 20px; }
+            .cta-group { flex-direction: column; }
+            .btn { max-width: 100%; }
+            .floating-btn { bottom: 15px; right: 15px; padding: 12px 18px; font-size: 14px; }
         }
     </style>
 </head>
 <body>
 
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+
     <header>
-        <a href="#" class="logo">🍭 Sweet Bonanza 🍒</a>
+        <a href="#" class="logo">SWEET<span>BONANZA</span> 🍭</a>
     </header>
 
-    <!-- Главный экран -->
-    <section class="hero">
-        <h1>Слот Sweet Bonanza: Играть Онлайн и Бесплатно</h1>
-        <p>Крупнейшие заносы, невероятные множители и сладкие победы от Pragmatic Play. Заходи, крути и выигрывай!</p>
-        
-        <div class="buttons-group">
-            <!-- Кнопка ИГРАТЬ (Рефка) -->
-            <a href="https://one-vv6649.com/casino/list?open=register&sub1=sweet" class="btn btn-play" target="_blank" rel="nofollow noopener">🍬 ИГРАТЬ НА ДЕНЬГИ</a>
+    <main>
+        <!-- Геро-блок -->
+        <section class="glass-panel" style="text-align: center; border: 2px solid rgba(255, 31, 113, 0.3);">
+            <h1>Слот Sweet Bonanza: Играть Демо и на Реальные Деньги</h1>
+            <p style="max-width: 800px; margin: 0 auto 25px; font-size: 18px; color: #fff;">
+                Узнай всё про легендарный автомат от Pragmatic Play. Стратегии, секреты механики, покупка бонусов и колоссальные заносы. Крути слоты бесплатно или забирай выигрыш в рублях!
+            </p>
             
-            <!-- Кнопка ДЕМО -->
-            <a href="https://demo.black/ru/slots/sweet-bonanza-1000" class="btn btn-demo" target="_blank" rel="nofollow noopener">🍩 ИГРАТЬ В ДЕМО</a>
-        </div>
-    </section>
-
-    <!-- Описание и СЕО блок 1 -->
-    <section class="content-section">
-        <h2>Обзор игры Sweet Bonanza (Свит Бонанза)</h2>
-        <p><strong>Игра Sweet Bonanza</strong> — это настоящий хит среди казино-стримеров и обычных игроков. Разработанный провайдером Pragmatic Play, этот слот (slot) переносит вас в мир сладостей, фруктов и невероятных множителей. Вы можете играть как в <strong>sweet bonanza рубли</strong>, так и абсолютно бесплатно.</p>
-        
-        <p>Хотите протестировать стратегии? Выбирайте <strong>sweet bonanza demo в рублях</strong> или обычную <strong>sweet bonanza демо</strong>. Если ваш баланс готов к реальной игре (с 1000р или 20 тысяч), вас ждут незабываемые эмоции и шанс поймать легендарный <strong>занос sweet bonanza</strong>.</p>
-
-        <div class="features-grid">
-            <div class="feature-card">
-                <h3>🍭 Версия 1000</h3>
-                <p><strong>Sweet Bonanza 1000</strong> — это обновленная версия с еще большими множителями. Доступно <strong>sweet bonanza 1000 играть демо в рублях</strong>. Попробуйте поймать <strong>sweet bonanza 1000 занос</strong> прямо сейчас!</p>
+            <div class="cta-group">
+                <a href="https://one-vv6649.com/casino/list?open=register&sub1=sweet" class="btn btn-main" target="_blank" rel="nofollow noopener">🍬 Играть на деньги</a>
+                <a href="https://demo.black/ru/slots/sweet-bonanza-1000" class="btn btn-demo" target="_blank" rel="nofollow noopener">🍩 Демо версия</a>
             </div>
-            <div class="feature-card">
-                <h3>🍒 Версия 2500</h3>
-                <p>Экстремальный множитель! Ищите <strong>sweet bonanza 2500 demo</strong> или <strong>sweet bonanza 2500 демо в рублях</strong>, чтобы оценить дисперсию перед игрой на реальные деньги.</p>
+        </section>
+
+        <!-- Большой SEO лонгрид -->
+        <article class="glass-panel">
+            <h2>Полный обзор игры Sweet Bonanza</h2>
+            <p><strong>Игра Sweet Bonanza</strong> — это абсолютный хит в мире гемблинга, разработанный топовой студией <strong>sweet bonanza pragmatic play</strong> (или просто <em>sweet bonanza pragmatic</em>). Этот автомат произвел революцию благодаря отказу от классических линий выплат. Здесь используется механика <em>Cluster Pays</em> (Pay Anywhere) — символы играют в любом месте экрана, главное, чтобы их выпало не менее 8 штук.</p>
+            <p>Вы можете <strong>играть бесплатно в sweet bonanza</strong>, запустив <strong>sweet bonanza демо</strong>, либо пополнить счет и играть в <strong>sweet bonanza рубли</strong>. Многие стримеры выбирают именно этот слот, чтобы показать зрителям грандиозный <strong>занос sweet bonanza</strong>.</p>
+
+            <h3>Основные характеристики слота (Stats)</h3>
+            <p>Прежде чем нажать кнопку <strong>play sweet bonanza</strong>, важно изучить <strong>sweet bonanza stats</strong>, чтобы понимать математику автомата.</p>
+            
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Параметр</th>
+                            <th>Значение</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Разработчик</td>
+                            <td>Pragmatic Play</td>
+                            <td>Гарантия честности в любом <strong>sweet bonanza casino</strong></td>
+                        </tr>
+                        <tr>
+                            <td>RTP (Отдача)</td>
+                            <td>96.48% - 96.51%</td>
+                            <td>Выше среднего по рынку</td>
+                        </tr>
+                        <tr>
+                            <td>Волатильность</td>
+                            <td>Высокая (High)</td>
+                            <td>Редкие, но очень крупные выплаты</td>
+                        </tr>
+                        <tr>
+                            <td>Сетка (Барабаны)</td>
+                            <td>6x5</td>
+                            <td>Каскадная механика Tumble (лавина)</td>
+                        </tr>
+                        <tr>
+                            <td>Макс. Выигрыш</td>
+                            <td>x21,100 от ставки</td>
+                            <td>Шанс на огромный икс с минимальной ставки</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="feature-card">
-                <h3>💣 Механика Scatter</h3>
-                <p>Ловите леденцы! <strong>Sweet bonanza scatter</strong> и <strong>sweet bonanza super scatter</strong> запускают фриспины, где бомбочки (множители до x1000) приносят колоссальные выигрыши.</p>
+
+            <h2>Механика, Символы и Бонусная игра</h2>
+            <p>Главная фишка <strong>слоты sweet bonanza</strong> — это каскадные падения. Когда символы образуют выигрыш, они взрываются, а на их место падают новые. Это позволяет получить несколько выплат за один спин.</p>
+            
+            <p>Но самое интересное начинается, когда на экране появляются 4 и более леденцов на палочке — это <strong>sweet bonanza scatter</strong>. Они запускают 10 фриспинов (бесплатных вращений). Именно в бонуске появляется <strong>sweet bonanza super scatter</strong> и знаменитые сладкие бомбы с множителями от x2 до <strong>sweet bonanza x1000</strong>. Эти множители суммируются и применяются к выигрышу за весь каскад!</p>
+
+            <h3>Таблица стоимости символов</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Символ</th>
+                            <th>Выплата за 8-9 шт</th>
+                            <th>Выплата за 12+ шт</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>🔴 Красное сердце (Леденец)</td>
+                            <td>x10</td>
+                            <td>x50</td>
+                        </tr>
+                        <tr>
+                            <td>🟣 Фиолетовая конфета</td>
+                            <td>x2.5</td>
+                            <td>x25</td>
+                        </tr>
+                        <tr>
+                            <td>🟢 Зеленая конфета</td>
+                            <td>x2</td>
+                            <td>x15</td>
+                        </tr>
+                        <tr>
+                            <td>🔵 Синяя конфета</td>
+                            <td>x1.5</td>
+                            <td>x12</td>
+                        </tr>
+                        <tr>
+                            <td>🍎 Яблоко / 🍉 Арбуз</td>
+                            <td>x1 / x0.5</td>
+                            <td>x10 / x5</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
-    </section>
 
-    <!-- Расширенный СЕО блок 2 -->
-    <section class="content-section">
-        <h2>Популярные версии и спин-оффы</h2>
-        <p>Вселенная Pragmatic Play не ограничивается оригиналом. Игроки по всему миру также ищут и играют в:</p>
-        <ul>
-            <li><strong>Sweet Rush Bonanza</strong> (включая <em>sweet rush bonanza demo в рублях</em> и <em>sweet rush bonanza slot brings</em>)</li>
-            <li><strong>Sweet Bonanza Xmas</strong> (Новогодняя версия слота, есть <em>sweet bonanza xmas demo</em>)</li>
-            <li><strong>Sweet Bonanza Candyland</strong> (Live-казино шоу с колесом фортуны и <em>sweet bonanza candyland stats</em>)</li>
-            <li><strong>Sweet Bonanza Dice</strong> (Классика с кубиками)</li>
-        </ul>
+            <h2>Эволюция слота: Версии 1000, 2500 и спин-оффы</h2>
+            <p>Популярность оригинальной <strong>sweet bonanza games</strong> привела к созданию целой вселенной спин-оффов.</p>
 
-        <h3>Как играть в Sweet Bonanza бесплатно?</h3>
-        <p>Если вы задаетесь вопросом "<strong>как играть в sweet bonanza</strong> без риска?", ответ прост: используйте демо-счет! <strong>Демо sweet bonanza рубли</strong> (или <em>sweet bonanza demo rub / sweet bonanza demo balance</em>) позволяет крутить слоты, покупать бонусы и тестировать автомат. Нажмите на желтую кнопку в начале страницы, чтобы <strong>играть бесплатно в sweet bonanza</strong>.</p>
-    </section>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>🍭 Sweet Bonanza 1000</h4>
+                    <p>Прокачанная версия с максимальным множителем бомбы х1000! Игроки часто ищут <strong>sweet bonanza 1000 демо</strong> или <strong>sweet bonanza 1000 demo в рублях</strong>, чтобы увидеть этот потенциал. Именно здесь случаются легендарные истории, вроде <strong>sweet bonanza 1000 с 20 тысяч занос</strong>. У нас вы можете <strong>sweet bonanza 1000 играть демо</strong> прямо сейчас.</p>
+                </div>
+                <div class="card">
+                    <h4>💣 Sweet Bonanza 2500</h4>
+                    <p>Экстремальный уровень риска и азарта. Обязательно попробуйте <strong>sweet bonanza 2500 demo</strong> (есть и <strong>sweet bonanza 2500 демо в рублях</strong>). Стримеры регулярно выкладывают <strong>sweet bonanza 2500 заносы</strong>. Если вы не готовы рисковать деньгами, лучше <strong>играть демо sweet bonanza 2500</strong>.</p>
+                </div>
+                <div class="card">
+                    <h4>🎡 Sweet Bonanza Candyland</h4>
+                    <p>Это Live-казино шоу с настоящим ведущим и огромным колесом фортуны. Опытные игроки всегда изучают <strong>sweet bonanza candyland stats</strong> перед тем, как делать ставки на сектора с бонусами.</p>
+                </div>
+                <div class="card">
+                    <h4>⚡ Sweet Rush Bonanza</h4>
+                    <p>Динамичный спин-офф (часто ищут как <em>sweet rush bonanza</em>, <em>sweet rush bonanza demo в рублях</em>, <em>sweet rush bonanza slot brings</em> и <em>sweet bonanza rush demo</em>). Также стоит упомянуть новогоднюю <strong>sweet bonanza xmas</strong> (есть <em>sweet bonanza xmas demo</em>) и кубики <strong>sweet bonanza dice</strong>.</p>
+                </div>
+            </div>
 
-    <!-- СЕО блок 3 (Отзывы и итоги) -->
-    <section class="content-section">
-        <h2>Плюсы, минусы и отзывы</h2>
-        <p>Анализируя <strong>sweet bonanza отзывы</strong> и <strong>sweet bonanza stats</strong>, можно выделить главное:</p>
-        <p><strong>Sweet bonanza плюсы и минусы:</strong> К плюсам относятся яркая графика, крутая механика <em>sweet bonanza x1000</em> (или <em>sweet bonanza x1000 demo в рублях</em>), функция покупки бонуса и частые выпадения выигрышных комбинаций. Минус — высокая волатильность, что требует аккуратного банкролл-менеджмента (например, аккуратно <em>играть с 1000р</em>).</p>
-        
-        <p>У нас вы найдете всё: от того, где <strong>скачать sweet bonanza</strong> (в виде мобильного приложения казино), до официальных данных от <strong>sweet bonanza pragmatic play</strong>.</p>
-        
-        <!-- Скрытый блок ключей для плотности (визуально не мешает пользователю) -->
-        <div class="seo-tags">
-            Популярные поисковые запросы: sweet bonanza casino, play sweet bonanza, играют sweet bonanza демо, sweet bonanza logo, sweet bonanza super, sweet bonanza 2500 заносы, sweet bonanza 1000 с 20 тысяч занос, играть демо sweet bonanza 2500, sweet bonanza 1000 демо, sweet bonanza games.
-        </div>
-    </section>
+            <h2>Стратегии и Банкролл: Как играть правильно?</h2>
+            <p>Задаетесь вопросом "<strong>как играть в sweet bonanza</strong> и не слить баланс?". Главное правило — мани-менеджмент. Поскольку автомат высоковолатильный, вам нужен запас хотя бы на 100-200 спинов. Например, если вы зашли в <strong>sweet bonanza с 1000р</strong> (или ищете стратегию на <strong>sweet bonanza 1000 рублей</strong>), играйте по минимальной ставке.</p>
+            <p>Если вы хотите покупать бонусные игры (Buy Feature), лучше сначала протестировать их. Запустите <strong>демо sweet bonanza рубли</strong> (или <em>sweet bonanza demo rub</em> / <em>sweet bonanza demo balance</em>), купите 10 бонусок подряд и оцените средний возврат. Функция <strong>sweet bonanza super</strong> шанса (Double Chance to Win Feature) также увеличивает шанс выпадения скаттеров на 25%.</p>
+
+            <h2>Плюсы и минусы, Отзывы</h2>
+            <p>Изучая <strong>sweet bonanza отзывы</strong>, мы выделили ключевые <strong>sweet bonanza плюсы и минусы</strong>:</p>
+            <ul>
+                <li><strong>Плюсы:</strong> Отсутствие линий (Pay Anywhere), возможность сорвать джекпот в любой момент (благодаря <strong>sweet bonanza x1000 demo в рублях</strong> механикам), приятный <strong>sweet bonanza logo</strong> и дизайн, легкий вход для новичков. Удобно <strong>sweet bonanza играть в рублях</strong> в любом казино.</li>
+                <li><strong>Минусы:</strong> Долгие "пустые" спины без выигрышей из-за высокой дисперсии. Иногда купленный бонус может выдать x5 от стоимости. Отдельно <strong>скачать sweet bonanza</strong> как приложение нельзя, только <strong>sweet bonanza slot</strong> через браузер.</li>
+            </ul>
+
+        </article>
+
+        <!-- Блок FAQ -->
+        <section class="glass-panel">
+            <h2>FAQ: Ответы на частые вопросы</h2>
+            
+            <details>
+                <summary>Можно ли играть в Свит Бонанза бесплатно?</summary>
+                <div class="faq-content">
+                    Да! Вы можете <strong>играть бесплатно в sweet bonanza</strong>. Для этого используйте <strong>sweet bonanza demo в рублях</strong> или обычную <strong>sweet bonanza демо</strong>. Это позволит изучить механику <strong>sweet bonanza 1000 играть демо в рублях</strong> без риска.
+                </div>
+            </details>
+
+            <details>
+                <summary>Что значит версия 1000 и 2500?</summary>
+                <div class="faq-content">
+                    Это обновленные <strong>слоты sweet bonanza</strong>, где максимальный множитель бомбы увеличен. <strong>Sweet bonanza 1000 demo</strong> и <strong>sweet bonanza 2500 demo</strong> позволяют протестировать эти экстремальные множители и поймать <strong>sweet bonanza 1000 занос</strong> виртуально.
+                </div>
+            </details>
+
+            <details>
+                <summary>Где лучше играть на реальные рубли?</summary>
+                <div class="faq-content">
+                    Выбирайте только лицензионные площадки (надежное <strong>sweet bonanza casino</strong>). Переходите по нашим кнопкам, чтобы безопасно <strong>play sweet bonanza</strong> на реальные деньги и получить приветственные бонусы.
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- Плавающая кнопка ИГРАТЬ в правом нижнем углу -->
+    <a href="https://one-vv6649.com/casino/list?open=register&sub1=sweet" class="floating-btn" target="_blank" rel="nofollow noopener">
+        🎁 ИГРАТЬ
+    </a>
 
     <footer>
-        <p>© 2024 Sweet Bonanza (Свит Бонанза). Сайт носит исключительно информационный характер. Играйте ответственно.</p>
+        <p>© 2026 Sweet Bonanza Promo. Все права защищены. Сайт носит исключительно информационный характер (18+).</p>
+        
+        <div class="seo-hidden">
+            sweet bonanza, sweet bonanza demo, sweet bonanza 1000, sweet bonanza 2500, sweet bonanza рубли, sweet bonanza демо, sweet rush bonanza, занос sweet bonanza, sweet bonanza super, игра sweet bonanza, играют sweet bonanza демо, sweet bonanza super scater, sweet bonanza xmas demo, sweet bonanza 2500 демо в рублях, sweet rush bonanza slot brings, sweet bonanza 1000 играть демо в рублях, играть демо sweet bonanza 2500, sweet bonanza 1000 demo в рублях, sweet bonanza 1000 играть.
+        </div>
     </footer>
 
 </body>
